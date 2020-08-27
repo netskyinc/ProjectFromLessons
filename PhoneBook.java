@@ -465,7 +465,7 @@ public class PhoneBook {
         // TODO: с помощью метода getFileName() получить имя файла от пользователя
         String fileName = getFileName();
 
-        try (FileOutputStream fos = new FileOutputStream("Files/" + fileName);
+        try (FileOutputStream fos = new FileOutputStream("/Documents/Dev/Java/ProjectFromLessons/" + fileName);
              PrintWriter writer = new PrintWriter(fos)) {
             // TODO: занести все контакты в файл
             for (Contact contact : contactList) {
